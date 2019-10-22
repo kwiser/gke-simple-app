@@ -25,7 +25,7 @@ const decrypt = ({ message, secret }) => {
 
   return decrypted;
 };
-
+//CHECK
 app.use(({ query: { message, secret }, path }, res, next) => {
   console.log(`${path}: ${message}`);
   next();
